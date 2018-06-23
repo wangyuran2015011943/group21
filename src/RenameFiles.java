@@ -23,16 +23,14 @@ import java.awt.Insets;
 
 /** 
  * 获取文件列表的过滤器 
- * 王雨然 2015011943 
- * 曹竞月 2015012024
- * 纪紫薇 2015012017
- * 张宇2015011956
+王雨然 2015011943
+曹竞月 2015012024	
+纪紫薇 2015012017
+张宇     2015011956
+
  */
 public class RenameFiles extends JFrame { 
 
-    /** 
-     *  
-     */
     private static final long serialVersionUID = 4534371106024773867L; 
 
     private final class ExtNameFileFilter implements FileFilter { 
@@ -256,6 +254,8 @@ public class RenameFiles extends JFrame {
 
     /** 
      * 浏览按钮的事件处理方法 
+     *  
+     * @param e 
      */
     protected void do_button_actionPerformed(ActionEvent e) { 
         JFileChooser chooser = new JFileChooser();// 创建文件选择器 
@@ -272,6 +272,8 @@ public class RenameFiles extends JFrame {
 
     /** 
      * 开始按钮的事件处理方法 
+     *  
+     * @param e 
      */
     protected void do_startButton_actionPerformed(ActionEvent e) { 
         String templet = templetField.getText();// 获取模板字符串 
